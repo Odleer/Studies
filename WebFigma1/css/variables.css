@@ -1,0 +1,49 @@
+:root {
+  --color-text-green: #27AE60;
+  --color-text-green-light: #49ca7f;
+  --color-text-white: #FFFFFF;
+  --color-text-grey-light: #949494;
+  --color-text-grey: #4F4F4F;
+
+  --border-sm: 1px solid;
+  --border-md: 4px solid;
+  --hero-img-border: 24px solid #1E1E1E;
+
+  --color-background: #171717;
+  --color-background-light: #212121;
+
+  --font-main: 'Onest', sans-serif;
+
+  --font-size-xs: 14px;
+  --font-size-sm: 18px;
+  --font-size-md: 36px;
+  --font-size-lg: 48px;
+  --font-size-xl: 72px;
+
+  --font-weight-regular: 100;
+  --font-weight-medium: 400;
+  --font-weight-semi-bold: 500;
+  --font-weight-bold: 600;
+
+  --font-height-sm: 1.1;
+  --font-height-md: 1.3;
+  --font-height-lg: 1.5;
+
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-md: 24px;
+  --spacing-lg: 32px;
+  --spacing-xl: 48px;
+  --spacing-2xl: 96px;
+
+  --padding-header: 24px 32px;
+  --padding-hero-buttons: 16px 32px;
+  --padding-services-card: 64px 40px;
+  --padding-skills: 48px 24px;
+  --padding-form-input: 12px 8px;
+  --padding-form-textarea: 16px;
+  --padding-footer: 128px 0 64px;
+
+  --radius-md: 8px;
+  --transition: 0.2s ease;
+}

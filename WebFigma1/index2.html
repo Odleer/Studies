@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BaseWeb</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="container header">
+    <a href="#" class="logo">OldBeer</a>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="#about">Обо мне</a></li>
+        <li><a href="#service">Сервисы</a></li>
+        <li><a href="#contact">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="container hero">
+      <div class="hero-content">
+        <h1>Привет, я<br>Тимур Зироллов</h1>
+        <p>Художник пикселей</p>
+        <div class="hero-buttons">
+            <a href="#about" class="buttons-base button-primary">Тут типо резюме</a>
+            <a href="#about" class="buttons-base button-outline">Обо мне</a>
+        </div>
+      </div>
+      <div>
+        <img class="hero-image" src="img/avatar.jpg" alt="Точно не украденная фотка с спотика">
+      </div>
+    </section>
+    <section id="about" class="container about">
+      <h2>Обо мне</h2>
+      <p class="about-text">
+        Моя главная страсть — кропотливая работа с графикой и пиксель-артом: я получаю настоящее удовольствие от выверки каждого пикселя даже в самых простых редакторах вроде Paint. За этим увлечением стоит серьёзный технический бэкграунд. У меня есть уверенный опыт работы с мета-файлами, создания интерактивных прототипов и написания кода, что позволяет мне не просто рисовать, а понимать, как визуал интегрируется в продукт. За плечами — участие во множестве разнообразных проектов, где я успешно реализовывал масштабные и комплексные задачи с нуля до финального релиза      </p>
+      <div class="about-grid">
+        <div>
+          <h3>Полное Имя</h3>
+          <p>Тимур Зироллов</p>
+        </div>
+        <div>
+          <h3>Почта</h3>
+          <p>odlieerr@gmail.com</p>
+        </div>
+        <div>
+          <h3>GitHub</h3>
+          <p>@Odleer</p>
+        </div>
+        <div>
+          <h3>Discord</h3>
+          <p>@odlieerr</p>
+        </div>
+      </div>
+    </section>
+    <section id="service" class="container services">
+      <h2>Чем я занимаюсь</h2>
+      <div class="service">
+        <article>
+          <h3>Рисованием<br>спрайтов</h3>
+        </article>
+        <article>
+          <h3>Написанием<br>меты</h3>
+        </article>
+        <article>
+          <h3>Созданием<br>геймдизайна</h3>
+        </article>
+      </div>
+    </section>
+
+
+    <section class="container skills">
+      <h2>Мои навыки</h2>
+      <div class="skill">
+        <div>
+          <span class="skill-proc">90%</span>
+          <span class="skill-text">PAINT.NET</span>
+        </div>
+        <div>
+          <span class="skill-proc">70%</span>
+          <span class="skill-text">ASEPRITE</span>
+        </div>
+        <div>
+          <span class="skill-proc">50%</span>
+          <span class="skill-text">PHOTOSHOP</span>
+        </div>
+        <div>
+          <span class="skill-proc">100%</span>
+          <span class="skill-text">JSON</span>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="contact" class="container">
+      <h2>Связь</h2>
+      <form action="#" method="POST">
+        <input type="text" name="name" placeholder="Имя" required>
+        <input type="text" name="last_name" placeholder="Фамилия" required>
+        <input type="email" name="email" placeholder="Почта" required>
+        <input type="tel" name="phone" placeholder="Номер телефона">
+        <textarea name="message" placeholder="Сообщение" rows="5" required></textarea>
+        <button type="submit" class="buttons-base button-primary">Отправить</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p>OldBeer 2026</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

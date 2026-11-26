@@ -1,0 +1,293 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text-white);
+  font-family: var(--font-main);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--font-height-lg);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding-left: var(--spacing-lg);
+  padding-right: var(--spacing-lg);
+}
+
+section {
+  padding-top: var(--spacing-2xl);
+}
+
+section h2 {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+/* Шапка */
+.header {
+  display: flex;
+  flex-wrap: wrap
+  justify-content: space-between;
+  align-items: center;
+  padding-top: var(--spacing-md);
+  padding-bottom: var(--spacing-md);
+}
+
+.logo {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
+}
+
+.nav-list {
+  display: flex;
+  gap: var(--spacing-lg);
+  list-style: none;
+}
+
+.nav-list a:hover {
+  color: var(--color-text-green);
+}
+
+/* Хиро */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--spacing-xl);
+  padding-top: var(--spacing-xl);
+  padding-bottom: var(--spacing-xl);
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-content h1 {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--font-height-md);
+  margin-bottom: var(--spacing-sm);
+}
+
+.hero-content p {
+  color: var(--color-text-grey-light);
+  font-weight: var(--font-weight-medium);
+  margin-bottom: var(--spacing-lg);
+}
+
+.hero-buttons {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.buttons-base {
+  display: inline-block;
+  padding: var(--padding-hero-buttons);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  text-align: center;
+  min-width: 145px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.button-primary {
+  background-color: var(--color-text-green);
+  color: var(--color-text-white);
+}
+
+.button-primary:hover {
+  background-color: var(--color-text-green-light);
+}
+
+.button-outline {
+  background-color: var(--color-background-light);
+  color: var(--color-text-white);
+  border: var(--border-sm) var(--color-text-grey);
+}
+
+.button-outline:hover {
+  border-color: var(--color-text-grey-light);
+}
+
+.hero-image {
+  display: block;
+  max-width: 580px;
+  height: 580px;
+  object-fit: cover;
+  border-radius: 100%;
+  border: var(--hero-img-border);
+}
+
+/* Обо мне */
+.about {
+  text-align: center;
+}
+
+.about-text {
+  max-width: 745px;
+  margin: 0 auto var(--spacing-xl);
+  line-height: var(--font-height-lg);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-lg);
+}
+
+.about-grid > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.about-grid > div::before {
+  content: "";
+  width: 64px;
+  height: 64px;
+  margin-bottom: var(--spacing-xs);
+  border-radius: 100%;
+  background: radial-gradient(circle, var(--color-text-green) 6px, var(--color-background-light) 6px);
+}
+
+/* cthdbcs */
+.services {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap
+}
+
+.service {
+  display: flex;
+  gap: var(--spacing-lg);
+}
+
+.service article {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  flex: 1;
+  background: var(--color-background-light);
+  padding: var(--padding-services-card);
+  border-bottom: var(--border-md) transparent;
+  transition: var(--transition);
+}
+
+.service article:hover {
+  border-bottom-color: var(--color-text-green);
+}
+
+.service article svg {
+  width: 32px;
+  height: 32px;
+  color: var(--color-text-green);
+  stroke-width: 2;
+}
+
+
+/* Навыки */
+.skills {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap
+}
+
+.skill {
+  display: flex;
+  gap: var(--spacing-lg);
+  background: var(--color-background-light);
+  padding: var(--padding-skills);
+  text-align: center;
+}
+
+.skill div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.skill-proc {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-grey);
+  line-height: var(--font-height-sm);
+}
+
+.skill-text {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-green);
+}
+
+/* Связб */
+form {
+  max-width: 750px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-lg);
+}
+
+input,
+textarea {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: var(--border-sm) var(--color-text-grey);
+  color: var(--color-text-white);
+  font-size: var(--font-size-xs);
+  padding: var(--padding-form-input);
+  outline: none;
+  transition: var(--transition);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--color-text-grey);
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--color-text-green);
+}
+
+textarea {
+  grid-column: 1 / -1;
+  border: var(--border-sm) var(--color-text-grey);
+  padding: var(--padding-form-textarea);
+  resize: none;
+}
+
+form button {
+  grid-column: 1 / -1;
+  justify-self: center;
+  border: none;
+  font-family: inherit;
+}
+
+/* Подвал */
+.footer {
+  text-align: center;
+  color: var(--color-text-grey);
+  font-size: var(--font-size-xs);
+  padding: var(--padding-footer);
+}
