@@ -40,7 +40,7 @@ section h2 {
 /* Шапка */
 .header {
   display: flex;
-  flex-wrap: wrap
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding-top: var(--spacing-md);
@@ -126,10 +126,11 @@ section h2 {
 
 .hero-image {
   display: block;
-  max-width: 580px;
-  height: 580px;
+  width: clamp(280px, 45vw, 580px);
+  aspect-ratio: 1 / 1;
+  flex-shrink: 0;
   object-fit: cover;
-  border-radius: 100%;
+  border-radius: 50%;
   border: var(--hero-img-border);
 }
 
@@ -206,19 +207,20 @@ section h2 {
 .skills {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap
 }
 
 .skill {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: var(--spacing-lg);
   background: var(--color-background-light);
   padding: var(--padding-skills);
   text-align: center;
+  width: 100%;
 }
 
 .skill div {
-  flex: 1;
+  min-width: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -290,4 +292,92 @@ form button {
   color: var(--color-text-grey);
   font-size: var(--font-size-xs);
   padding: var(--padding-footer);
+}
+
+
+/* Адаптация */
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column-reverse; 
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-image {
+    margin: 0 auto;
+  }
+
+  .about-grid {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+
+  .service {
+    flex-wrap: wrap;
+  }
+
+  .service article {
+    min-width: min(100%, 280px); 
+  }
+
+  .skill {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 32px 20px; 
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+
+  .nav-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-sm);
+  }
+
+  .hero-image {
+    width: 280px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .buttons-base {
+    width: 100%;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service,
+  .skill {
+    flex-direction: column; 
+  }
+
+  form {
+    grid-template-columns: minmax(0, 1fr);
+    width: 100%;
+  }
+
+  
+  .skill {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 24px 16px;
+  }
 }
