@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Тимур Зироллов (OldBeer) — Пиксель-арт и Геймдев</title>
+  <meta name="description" content="Портфолио Тимура Зироллова: создание спрайтов, пиксель-арт, написание мета-файлов (JSON) и геймдизайн.">
+  
+  <link rel="preconnect" href="https://googleapis.com">
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link href="https://googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="header-wrapper">
+    <header class="container header">
+      <a href="#" class="logo">OldBeer</a>
+      <button class="burger" id="burgerBtn" aria-label="Открыть меню">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+      <nav>
+        <ul class="nav-list" id="navList">
+          <li><a href="#about">Обо мне</a></li>
+          <li><a href="#service">Услуги</a></li>
+          <li><a href="#skills">Навыки</a></li>
+          <li><a href="#contact">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+
+  <main>
+    <section class="container hero">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="status-dot"></span>
+          <span>Открыт к новым проектам</span>
+        </div>
+        <h1>Привет, я<br><span>Тимур Зироллов</span></h1>
+        <p class="hero-subtitle">Художник пикселей, разработчик мета-архитектуры и геймдизайнер. Превращаю идеи в живые спрайты и продуманные игровые механики.</p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary">Обсудить проект</a>
+          <a href="#about" class="btn btn-outline">Узнать больше</a>
+        </div>
+      </div>
+      <div class="hero-image-wrapper">
+        <img class="hero-image" src="img/avatar.jpg" alt="Аватар Тимура Зироллова" onerror="this.src='https://placehold.co'">
+      </div>
+    </section>
+
+    <section id="about" class="container">
+      <div class="section-header">
+        <span class="section-tag">// БЭКГРАУНД</span>
+        <h2>Обо мне</h2>
+      </div>
+      
+      <div class="about-card">
+        <p class="about-text">
+          Моя главная страсть — кропотливая работа с графикой и пиксель-артом: я получаю настоящее удовольствие от выверки каждого пикселя даже в самых лаконичных редакторах. За этим увлечением стоит серьёзный технический бэкграунд. Уверенный опыт работы с мета-файлами, создания интерактивных прототипов и написания кода позволяет мне не просто рисовать, а понимать, как визуал интегрируется в продукт. За плечами — участие во множестве проектов, где я реализовывал комплексные задачи с нуля до релиза.
+        </p>
+
+        <div class="about-grid">
+          <div class="info-item">
+            <div class="info-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            </div>
+            <h3>Полное имя</h3>
+            <p>Тимур Зироллов</p>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+            </div>
+            <h3>Почта</h3>
+            <a href="mailto:odlieerr@gmail.com">odlieerr@gmail.com</a>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+            </div>
+            <h3>GitHub</h3>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer">@Odleer</a>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            </div>
+            <h3>Discord (клик для копии)</h3>
+            <button type="button" class="copy-btn" data-copy="@odlieerr">@odlieerr</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="service" class="container">
+      <div class="section-header">
+        <span class="section-tag">// НАПРАВЛЕНИЯ</span>
+        <h2>Чем я занимаюсь</h2>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card">
+          <div class="service-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="7" height="7"></rect>
+              <rect x="14" y="3" width="7" height="7"></rect>
+              <rect x="14" y="14" width="7" height="7"></rect>
+              <rect x="3" y="14" width="7" height="7"></rect>
+            </svg>
+          </div>
+          <h3>Рисование спрайтов</h3>
+          <p>Создание детальной пиксельной графики, персонажей, тайлсетов, иконок и покадровой анимации для игр и модов.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+          </div>
+          <h3>Написание меты</h3>
+          <p>Структурирование данных, настройка JSON-конфигов, балансировка параметров и интеграция графических ассетов в движок.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+          </div>
+          <h3>Геймдизайн</h3>
+          <p>Проектирование игровых механик, циклов прогрессии, пользовательского опыта и прототипирование концептов.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="container">
+      <div class="section-header">
+        <span class="section-tag">// СТЕК ИНСТРУМЕНТОВ</span>
+        <h2>Мои навыки</h2>
+      </div>
+
+      <div class="skills-grid" id="skillsGrid">
+        <div class="skill-card" data-percent="90">
+          <span class="skill-proc">90%</span>
+          <span class="skill-name">PAINT.NET</span>
+          <div class="progress-bar"><div class="progress-fill"></div></div>
+        </div>
+
+        <div class="skill-card" data-percent="70">
+          <span class="skill-proc">70%</span>
+          <span class="skill-name">ASEPRITE</span>
+          <div class="progress-bar"><div class="progress-fill"></div></div>
+        </div>
+
+        <div class="skill-card" data-percent="50">
+          <span class="skill-proc">50%</span>
+          <span class="skill-name">PHOTOSHOP</span>
+          <div class="progress-bar"><div class="progress-fill"></div></div>
+        </div>
+
+        <div class="skill-card" data-percent="100">
+          <span class="skill-proc">100%</span>
+          <span class="skill-name">JSON</span>
+          <div class="progress-bar"><div class="progress-fill"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container">
+      <div class="section-header">
+        <span class="section-tag">// НАПИСАТЬ МНЕ</span>
+        <h2>Связаться со мной</h2>
+      </div>
+
+      <div class="contact-wrapper">
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Имя *</label>
+            <input type="text" id="name" name="name" placeholder="Иван" required>
+          </div>
+
+          <div class="form-group">
+            <label for="last_name">Фамилия *</label>
+            <input type="text" id="last_name" name="last_name" placeholder="Иванов" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Электронная почта *</label>
+            <input type="email" id="email" name="email" placeholder="example@mail.ru" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Номер телефона (необязательно)</label>
+            <input type="tel" id="phone" name="phone" placeholder="+7 (999) 000-00-00">
+          </div>
+
+          <div class="form-group full-width">
+            <label for="message">Сообщение *</label>
+            <textarea id="message" name="message" placeholder="Расскажите о вашей задаче или проекте..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary form-submit">Отправить сообщение</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
